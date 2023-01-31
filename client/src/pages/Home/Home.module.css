@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+    background: url("./Back.png");
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+
+

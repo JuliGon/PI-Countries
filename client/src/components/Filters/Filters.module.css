@@ -1,0 +1,32 @@
+.filters {
+    width: 20%;
+    height: 30px;
+    margin: 20px;
+    margin-top: 100px;
+    padding-left: 10px;
+    border: 2px solid black;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: #FFC31A;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.label{
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    align-self: center;
+}
+
+.option{
+    background-color: white;
+    color: black;
+}
+
+.option:default{
+    background-color: white;
+    color:black ;
+}
+

@@ -1,0 +1,34 @@
+.landing {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-image: url("./Landing.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+background-color: #FFC31A;
+color: black;
+border: 2px solid black;
+width: 100px;
+height: auto;
+font-family: Helvetica, sans-serif;
+font-size: 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+padding: 10px 30px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 5px;
+margin-left: 300px;
+margin-top: 400px;
+}
+
+.button:hover {
+    background-color: black;
+    color: #FFC31A;
+}
