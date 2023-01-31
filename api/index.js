@@ -20,6 +20,7 @@
 const server = require("./src/app.js");
 const { conn } = require("./src/db.js");
 const { chargeAndGetCountries } = require("./src/routes/controllers/countries");
+require('dotenv').config();
 const { PORT } = process.env || 3001;
 
 // Syncing all the models at once.
