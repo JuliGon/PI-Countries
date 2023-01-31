@@ -6,9 +6,10 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from "../src/pages/Home/Home";
 import Detail from "../src/pages/Detail/Detail";
 import Form from "../src/pages/Form/Form";
+require('dotenv').config();
 import axios from "axios";
 
-axios.defaults.baseURL="http://localhost:3001";
+axios.defaults.baseURL="https://pi-countries-production-3d5b.up.railway.app/" || "http://localhost:3001";
 
 function App() {
 	return (
