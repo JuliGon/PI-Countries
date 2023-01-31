@@ -17,7 +17,7 @@ export const UPDATE_ACTIVITY = "UPDATE_ACTIVITY";
 export function getCountries() {
 	return async function (dispatch) {
 		try {
-			var json = await axios.get("http://localhost:3001/countries");
+			var json = await axios.get("/countries");
 			return dispatch({
 				type: GET_COUNTRIES,
 				payload: json.data,
@@ -32,7 +32,7 @@ export function getCountriesByName(payload) {
 	return async function (dispatch) {
 		try {
 			var json = await axios.get(
-				`http://localhost:3001/countries?name=${payload}`
+				`/countries?name=${payload}`
 			);
 			return dispatch({
 				type: GET_COUNTRIES_BY_NAME,
@@ -48,7 +48,7 @@ export function getCountriesByName(payload) {
 export function getActivities() {
 	return async function (dispatch) {
 		try {
-			var json = await axios.get("http://localhost:3001/activities");
+			var json = await axios.get("/activities");
 			return dispatch({
 				type: GET_ACTIVITIES,
 				payload: json.data,
@@ -62,7 +62,7 @@ export function getActivities() {
 export function getDetail(id) {
 	return async function (dispatch) {
 		try {
-			var json = await axios.get(`http://localhost:3001/countries/${id}`);
+			var json = await axios.get(`/countries/${id}`);
             return dispatch({
                 type: GET_DETAIL,
                 payload: json.data
@@ -77,7 +77,7 @@ export function postActivity(payload) {
 	return async function (dispatch) {
 		try {
 			const response = await axios.post(
-				"http://localhost:3001/activity",
+				"/activity",
 				payload
 			);
 			window.alert("Activity successfully created");
@@ -126,7 +126,7 @@ export function cleanDetail() {
 export function deleteActivity(id) {
 	return async function (dispatch) {
 		try {
-			const response = await axios.delete(`http://localhost:3001/activities?id=${id}`);
+			const response = await axios.delete(`/activities?id=${id}`);
 			return dispatch({
 				type: DELETE_ACTIVITY,
 				payload: id
@@ -141,7 +141,7 @@ export function updateActivity(payload) {
 	return async function () {
 		try {
 			const response = await axios.put(
-				"http://localhost:3001/activities", payload
+				"/activities", payload
 			);
 			return response;
 		} catch (error) {

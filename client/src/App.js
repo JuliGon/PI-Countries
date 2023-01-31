@@ -6,7 +6,9 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from "../src/pages/Home/Home";
 import Detail from "../src/pages/Detail/Detail";
 import Form from "../src/pages/Form/Form";
+import axios from "axios";
 
+axios.defaults.baseURL="http://localhost:3001";
 
 function App() {
 	return (
