@@ -2,14 +2,12 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Landing from "../src/pages/Landing/Landing";
-import NavBar from "./components/NavBar/NavBar";
 import Home from "../src/pages/Home/Home";
 import Detail from "../src/pages/Detail/Detail";
 import Form from "../src/pages/Form/Form";
-require('dotenv').config();
 import axios from "axios";
 
-axios.defaults.baseURL="https://pi-countries-production-3d5b.up.railway.app/" || "http://localhost:3001";
+axios.defaults.baseURL="https://pi-countries-production-3d5b.up.railway.app/";
 
 function App() {
 	return (
