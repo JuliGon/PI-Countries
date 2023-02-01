@@ -17,11 +17,14 @@ export default function Home() {
 	const [countriesPerPage, setCountriesPerPage] = useState(12); //un segundo estado local, le paso la cantidad de paises por pagina (12)
 	const indexOfLastCountry = currentPage * countriesPerPage; // 12
 	const indexOfFirstCountry = indexOfLastCountry - countriesPerPage; // 0
-	const currentCountries = allCountries.slice(indexOfFirstCountry, indexOfLastCountry);
+	const currentCountries = allCountries.slice(
+		indexOfFirstCountry,
+		indexOfLastCountry
+	);
 
 	//guarda los paises que se renderizan por pagina
 	//el slice divide el array de todos los paises desde el indice del primero hasta el indice del ultimo
-	
+
 	const pagination = (pageNumber) => {
 		//setea la pagina en el numero que vaya clickeando
 		setCurrentPage(pageNumber);
@@ -34,20 +37,20 @@ export default function Home() {
 			</div>
 			<div className={style.container}>
 				<Filters setCurrentPage={setCurrentPage} setOrder={setOrder} />
-				<Container
-					setCurrentPage={setCurrentPage}
-					currentCountries={currentCountries}
-				/>
-				<Pagination
-					key={1}
-					countriesPerPage={countriesPerPage}
-					allCountries={allCountries.length}
-					pagination={pagination}
-					currentPage={currentPage}
-					setCurrentPage={setCurrentPage}
-				/>
-				<Footer setCurrentPage={setCurrentPage} />
-			</div>
+					<Container
+						setCurrentPage={setCurrentPage}
+						currentCountries={currentCountries}
+					/>
+					<Pagination
+						key={1}
+						countriesPerPage={countriesPerPage}
+						allCountries={allCountries.length}
+						pagination={pagination}
+						currentPage={currentPage}
+						setCurrentPage={setCurrentPage}
+					/>
+					<Footer setCurrentPage={setCurrentPage} />
+				</div>
 		</>
 	);
 }
