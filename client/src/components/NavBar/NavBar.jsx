@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getCountriesByName } from "../../redux/actions";
 import style from "./NavBar.module.css";
-import Logo from "./Logo_SinTag.png";
+import Logo from "./Isologo.png";
 
 export default function NavBar({ setCurrentPage }) {
 	const dispatch = useDispatch();
