@@ -31,7 +31,7 @@
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     float: none; 
-    z-index: auto;
+    z-index: 0;
     width: 100px;
     height:auto;
     position: relative;
