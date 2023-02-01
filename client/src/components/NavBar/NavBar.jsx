@@ -36,9 +36,9 @@ export default function NavBar({ setCurrentPage }) {
 				<nav className={style.nav}>
 					<ul className={style.ul}>
 						<img id="logo" src={Logo} alt="" className={style.logo} />
-						<li className={style.li}>
+						{/* <li className={style.li}>
 							<a href="/">Landing Page</a>
-						</li>
+						</li> */}
 						<li className={style.li}>
 							<a href="/home">Countries</a>
 						</li>
