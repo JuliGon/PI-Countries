@@ -40,7 +40,7 @@ export default function NavBar({ setCurrentPage }) {
 							<a href="/">Landing Page</a>
 						</li> */}
 						<li className={style.li}>
-							<a href="/home">Countries</a>
+							<a href="/">Countries</a>
 						</li>
 						<li className={style.li}>
 							<a href="/activity">Create activity</a>
