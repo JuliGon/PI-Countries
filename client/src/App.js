@@ -7,7 +7,7 @@ import Detail from "../src/pages/Detail/Detail";
 import Form from "../src/pages/Form/Form";
 import axios from "axios";
 
-axios.defaults.baseURL="https://pi-countries-production-c580.up.railway.app/" || "http://localhost:3001";
+axios.defaults.baseURL="https://tothemoonandback-production.up.railway.app/" || "http://localhost:3001";
 
 function App() {
 	return (
