@@ -1,28 +1,34 @@
 .nav {
-    height: 60px;
-    width: 100%;
-    background-color: black;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 220px;
     position: fixed;
+    height: fit-content;
+    width: 100%;
     z-index: 100;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    bottom: 5%;
+    flex-flow: row;  
 }
+
+.nav.none {
+    display: none;
+  }
 
 .navbar nav {
     height: 100%;
 }
 
 .logo {
-    width: 40px;
-    height: 45px;
+    width: 2.5rem;
+    margin: 0.3em 1em;
+    height: auto;
     position: relative;
     display: inline-block;
     align-self: center;
-    padding-left: 40px;
-    padding-right: 20px;
-
+    flex-flow: row;
 }
 
 .ul {
@@ -52,8 +58,6 @@
     text-decoration: none;
     align-items: center;
     padding-top: 15px;
-   
-
 }
 
 .li a:hover {

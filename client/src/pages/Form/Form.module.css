@@ -5,7 +5,7 @@
     box-sizing: content-box;
     float: none;
     z-index: auto;
-    width: 100px;
+    width: 6.25rem;
     height: auto;
     position: static;
     cursor: pointer;
@@ -48,9 +48,9 @@
 }
 
 .form {
-    margin: 100px auto;
-    margin-right: 400px;
-    width: 500px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 31.25rem;
     background-color: black;
     padding: 0px;
     padding-top: 10px;
@@ -63,7 +63,7 @@
 
 h3 {
     font-family: Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 20px;

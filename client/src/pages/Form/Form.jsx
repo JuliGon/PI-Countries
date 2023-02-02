@@ -124,7 +124,7 @@ export default function Form() {
 	return (
 		<>
 			<div className={style.container}>
-				<Link to="/home">
+				<Link to="/">
 					<button className={style.button}>Home</button>
 				</Link>
 				<form onSubmit={(e) => handleSubmit(e)} className={style.form}>
