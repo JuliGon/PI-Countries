@@ -10,9 +10,9 @@
     position: static;
     cursor: pointer;
     opacity: 1;
-    margin-top: 20px;
-    padding: 10px 20px;
-    margin-left: 20px;
+    margin-top: 1.25rem;
+    padding: 0.625rem 1.25rem;
+    margin-left: 1.25rem;
     overflow: hidden;
     border: 2px solid;
     -webkit-border-radius: 0;
@@ -28,9 +28,8 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     -webkit-transform-origin: 50% 50% 0;
     transform-origin: 50% 50% 0;
-    padding: 10px 30px;
     transition-duration: 0.4s;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .button:hover {
@@ -50,11 +49,11 @@
 .detail {
     margin: 0 auto;
     margin-top: 5rem;
-    width: 31.25rem;
+    width: 30rem;
     background-color: black;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     border: 2px solid #FFC31A;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 h3 {
@@ -72,8 +71,8 @@ h5 {
 }
 
 .img{
-    width: 25rem;
-    height: 14.0625rem;
+    width: 24rem;
+    height: 14rem;
 }
 
 .p {

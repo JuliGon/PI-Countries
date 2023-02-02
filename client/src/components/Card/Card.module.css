@@ -1,15 +1,15 @@
     .card {
-        margin: 20px;
+        margin: 1.25rem;
         width: 18rem;
         height: 15rem;
         background-color: rgba(0, 0, 0, 0.75);
-        border-radius: 15px;
+        border-radius: 0.9375rem;
     }
 
     .title {
-        padding-top: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-top: 0.9375rem;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
         color: white;
         font-family: Helvetica, sans-serif;
         font-size: 13px;
@@ -26,9 +26,9 @@
     }
 
     .img {
-        width: 250px;
-        height: 150px;
-        padding-bottom: 15px;
+        width: 15.625rem;
+        height: 9.375rem;
+        padding-bottom: 0.9375rem;
     }
 
     .activity {
@@ -36,6 +36,6 @@
         font-size: 45px;
         font-weight: bold;
         color: white;
-        padding-top: 85px;
+        padding-top: 5.3125rem;
     }
 

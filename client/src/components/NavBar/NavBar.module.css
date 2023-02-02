@@ -54,10 +54,9 @@
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    padding: 14px 16px;
+    padding: 0.875rem;
     text-decoration: none;
     align-items: center;
-    padding-top: 15px;
 }
 
 .li a:hover {
@@ -74,15 +73,15 @@
     position: static;
     cursor: auto;
     opacity: 1;
-    margin-left: 10px;
-    padding: 10px 20px;
+    margin-left: 0.625rem;
+    padding: 0.625rem 1.25rem;
     overflow: visible;
     border: 2px solid black;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
     background: white;
     color: black;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .button {
@@ -92,13 +91,13 @@
     box-sizing: content-box;
     float: none;
     z-index: auto;
-    width: 100px;
+    width: 6.25rem;
     height: auto;
     position: static;
     cursor: pointer;
     opacity: 1;
-    padding: 10px 20px;
-    margin-left: 10px;
+    padding: 0.625rem 1.25rem;
+    margin-left: 0.625rem;
     overflow: hidden;
     border: 2px solid;
     -webkit-border-radius: 0;
@@ -116,7 +115,7 @@
     transform-origin: 50% 50% 0;
     padding: 10px 30px;
     transition-duration: 0.4s;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .button:hover {

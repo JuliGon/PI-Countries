@@ -5,13 +5,13 @@
     background-position: center;
     flex-direction: column;
     align-self: center;
-    padding: 5px;
-    margin-bottom: 20px;
+    padding: 0.3125rem;
+    margin-bottom: 1.25rem;
 }
 
 .li {
     display: inline-block;
-    padding: 5px;
+    padding: 0.3125rem;
     cursor: pointer;
     position: relative;
     color: black;
@@ -23,7 +23,7 @@
     position: relative;
     color: black;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.3125rem;
 }
 
 .buttonDisabled {
