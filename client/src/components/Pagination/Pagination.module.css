@@ -14,14 +14,14 @@
     padding: 0.3125rem;
     cursor: pointer;
     position: relative;
-    color: black;
+    color: var(--negro-primario);
 }
 
 .a {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    color: black;
+    color: var(--negro-primario);
     text-decoration: none;
     padding: 0.3125rem;
 }

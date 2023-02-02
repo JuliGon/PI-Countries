@@ -1,3 +1,12 @@
+/* variables paleta de colores */
+:root {
+  --amarillo-primario: #ffc31a;
+  --negro-primario: black;
+  --negro-background: #202020;
+  --negro-secundario: rgba(0, 0, 0, 0.75);
+  --blanco-secundario: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

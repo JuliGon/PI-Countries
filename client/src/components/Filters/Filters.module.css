@@ -7,8 +7,8 @@
     border: 2px solid black;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
-    color: black;
-    background-color: #FFC31A;
+    color: var(--negro-primario);
+    background-color: var(--amarillo-primario);
     border-radius: 0.3125rem;
     align-items: center;
 }
@@ -16,17 +16,17 @@
 .label{
     font-family: Helvetica, sans-serif;
     font-size: 14px;
-    color: black;
+    color: var(--negro-primario);
     align-self: center;
 }
 
 .option{
-    background-color: white;
-    color: black;
+    background-color: var(--blanco-secundario);
+    color: var(--negro-primario);
 }
 
 .option:default{
-    background-color: white;
-    color:black ;
+    background-color: var(--blanco-secundario);
+    color: var(--negro-primario);
 }
 

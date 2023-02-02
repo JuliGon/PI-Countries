@@ -1,11 +1,10 @@
 .footer {
-    background-color: black;
+    background-color: var(--negro-primario);
     max-width: 100%;
     max-height: 3.125rem;
     font-family: Helvetica, sans-serif;
-    color: white;
+    color: var(--blanco-secundario);
     font-size: 12px;
     margin-top: 0.625rem;
     margin-bottom: 0px;
-
 }

@@ -17,7 +17,7 @@
 
 .link {
     text-decoration: none;
-    color: black;
+    color: var(--negro-primario)
 }
 
 .button {
@@ -42,11 +42,11 @@
     border: 2px solid black;
     -webkit-border-radius: 0;
     border-radius: 0;
-    color: black;
+    color: var(--negro-primario);
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     word-spacing: 2px;
-    background: #FFC31A;
+    background: var(--amarillo-primario);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -61,6 +61,6 @@
 }
 
 .button:hover {
-    background-color: black;
-    color: #FFC31A;
+    background-color: var(--negro-primario);
+    color: var(--amarillo-primario);
 }
