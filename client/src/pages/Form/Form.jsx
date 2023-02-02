@@ -129,7 +129,7 @@ export default function Form() {
 				</Link>
 				<form onSubmit={(e) => handleSubmit(e)} className={style.form}>
 					<div>
-						<h3 className={style.h3}>Create your activity!</h3>
+						<h3 className={style.h3}>Create your touristic activity</h3>
 						<label className={style.label}>Activity: </label>
 						<input
 							type="text"

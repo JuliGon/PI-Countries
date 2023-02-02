@@ -5,7 +5,7 @@
     margin-top: 6.25rem;
     padding-left: 0.625rem;
     border: 2px solid black;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto';
     font-size: 14px;
     color: var(--negro-primario);
     background-color: var(--amarillo-primario);
@@ -14,7 +14,7 @@
 }
 
 .label{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto';
     font-size: 14px;
     color: var(--negro-primario);
     align-self: center;

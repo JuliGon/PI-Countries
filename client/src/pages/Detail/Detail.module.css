@@ -17,7 +17,7 @@
     border: 2px solid;
     -webkit-border-radius: 0;
     border-radius: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto';
     font-size: 14px;
     color: var(--amarillo-primario);
     text-align: center;
@@ -57,17 +57,19 @@
 }
 
 h3 {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto';
     font-size: 16px;
     color: var(--blanco-secundario);
     text-align: center;
+    padding: 1em;
 }
 
 h5 {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto';
     font-size: 14px;
     color: var(--blanco-secundario);
     text-align: center;
+    padding: 0.5em;
 }
 
 .img{
@@ -76,10 +78,11 @@ h5 {
 }
 
 .p {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto';
     font-size: 12px;
     color: var(--blanco-secundario);
     text-align: center;
     background-position: center;
+    padding: 0.3em;
 }
 

@@ -1,41 +1,35 @@
-    .card {
-        margin: 1.25rem;
-        width: 18rem;
-        height: 15rem;
-        background-color: var(--negro-secundario);
-        border-radius: 0.9375rem;
-    }
+.card {
+	margin: 1.25rem;
+	width: 18rem;
+	height: 15rem;
+	background-color: var(--negro-secundario);
+	border-radius: 0.9375rem;
+}
 
-    .title {
-        padding-top: 0.9375rem;
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
-        color: var(--blanco-secundario);
-        font-family: Helvetica, sans-serif;
-        font-size: 13px;
-    }
+.title {
+	margin: 0 auto;
+	width: 13rem;
+	height: 1.5rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--blanco-secundario);
+	font-size: 14px;
+    margin-bottom: 5px;
+    padding: 1.25em 0.5em;
+}
 
-    .subtitle {
-        line-height: 0;
-        margin-top: 0%;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        color: var(--blanco-secundario);
-        font-family: Helvetica, sans-serif;
-        font-size: 10px;
-    }
+.subtitle {
+	line-height: 0;
+	margin-top: 0%;
+	padding-top: 0%;
+	padding: 1em;
+	color: var(--blanco-secundario);
+	font-size: 10px;
+}
 
-    .img {
-        width: 15.625rem;
-        height: 9.375rem;
-        padding-bottom: 0.9375rem;
-    }
-
-    .activity {
-        font-family: Helvetica, sans-serif;
-        font-size: 45px;
-        font-weight: bold;
-        color: var(--blanco-secundario);
-        padding-top: 5.3125rem;
-    }
-
+.img {
+	width: 15.625rem;
+	height: 9.375rem;
+	padding-bottom: 0.9375rem;
+}

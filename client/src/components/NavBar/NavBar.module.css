@@ -52,7 +52,7 @@
 
 .li a {
 	color: var(--blanco-secundario);
-	font-family: Helvetica, sans-serif;
+	font-family: 'Roboto';
 	font-weight: bold;
 	font-size: 14px;
 	padding: 0.875rem;
@@ -79,7 +79,7 @@
 	padding: 0.625rem 1.25rem;
 	overflow: visible;
 	border: 2px solid black;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Roboto';
 	font-size: 14px;
 	background: var(--blanco-secundario);
 	color: var(--negro-primario);
@@ -105,7 +105,7 @@
 	border: 2px solid;
 	-webkit-border-radius: 0;
 	border-radius: 0;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Roboto';
 	font-size: 14px;
 	color: var(--amarillo-primario);
 	text-align: center;

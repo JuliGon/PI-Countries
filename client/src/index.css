@@ -7,11 +7,6 @@
   --blanco-secundario: #ffffff;
 }
 
-@font-face {
-  font-family: 'Urbanistic-Regular';
-  src: url("./fonts/static/Urbanist-Regular.ttf");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: 'Urbanistic-Regular';
+  font-family: 'Roboto', -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,17 +25,3 @@ code {
     monospace;
 }
 
-body a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
-
-select {
-  font-family: inherit;
-}
