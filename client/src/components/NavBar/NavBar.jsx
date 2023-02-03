@@ -45,13 +45,13 @@ export default function NavBar({ setCurrentPage }) {
 						<a href="/">Home</a>
 					</div>
 					<div className={style.div}>
-						<a href="/activity">Create activity</a>
+						<a href="/activity">Form</a>
 					</div>
 					<div className={style.div}>
 						<input
 							value={name}
 							type="text"
-							placeholder="Find a country..."
+							placeholder="Search..."
 							onChange={(e) => handleInputChange(e)}
 							className={style.input}
 						/>

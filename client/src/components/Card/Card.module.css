@@ -1,9 +1,9 @@
 .card {
-	margin: 1.25rem;
-	width: 18rem;
-	height: 15rem;
+	margin: 1rem;
+	width: 17rem;
+	height: 13.5rem;
 	background-color: var(--negro-secundario);
-	border-radius: 1.75rem;
+	border-radius: 1.85rem;
 }
 
 .title {
@@ -15,8 +15,8 @@
 	text-overflow: ellipsis;
 	color: var(--blanco-secundario);
 	font-size: 14px;
-    margin-bottom: 5px;
-    padding: 1.25em 0.5em;
+  margin-bottom: 5px;
+  padding: 1.25em 0.5em;
 }
 
 .subtitle {
@@ -29,7 +29,7 @@
 }
 
 .img {
-	width: 15.625rem;
-	height: 9.375rem;
+	width: 14.5rem;
+	height: 8.75rem;
 	padding-bottom: 0.9375rem;
 }
