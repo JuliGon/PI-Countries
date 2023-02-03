@@ -70,7 +70,7 @@ export default function Detail() {
 						}
 					</div>
 				 : 
-					<p className={style.p}>Information not available.</p>
+					<p className={style.notavailable}>Information not available</p>
 				}
 			</div>
 		</>

@@ -32,20 +32,21 @@ export default function NavBar({ setCurrentPage }) {
 
 	return (
 		<>
-			<header>
-				<nav className={style.nav}>
-					<ul className={style.ul}>
+				<nav className={style.navbar}>
+					<div className={style.items}>
+						<div>
 						<img id="logo" src={Logo} alt="" className={style.logo} />
+						</div>
 						{/* <li className={style.li}>
 							<a href="/">Landing Page</a>
 						</li> */}
-						<li className={style.li}>
-							<a href="/">Countries</a>
-						</li>
-						<li className={style.li}>
+						<div className={style.div}>
+							<a href="/">Home</a>
+						</div>
+						<div className={style.div}>
 							<a href="/activity">Create activity</a>
-						</li>
-						<li className={style.li}>
+						</div>
+						<div className={style.div}>
 							<input
 								value={name}
 								type="text"
@@ -53,8 +54,8 @@ export default function NavBar({ setCurrentPage }) {
 								onChange={(e) => handleInputChange(e)}
 								className={style.input}
 							/>
-						</li>
-						<li className={style.li}>
+						</div>
+						<div className={style.div}>
 							<button
 								type="submit"
 								onClick={(e) => handleSubmit(e)}
@@ -62,10 +63,9 @@ export default function NavBar({ setCurrentPage }) {
 							>
 								Search
 							</button>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</nav>
-			</header>
 		</>
 	);
 }
