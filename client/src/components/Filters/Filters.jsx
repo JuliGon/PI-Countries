@@ -41,7 +41,7 @@ export default function Filters({ setCurrentPage, setOrder }) {
 
 	return (
 		<>
-			<div>
+			<div className={style.container}>
 				<label className={style.label}></label>
 				<select
 					defaultValue="default"

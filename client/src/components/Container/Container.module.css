@@ -39,7 +39,7 @@
     opacity: 1;
     padding: 0.5625rem 1.25rem;
     overflow: hidden;
-    border: 2px solid black;
+    border: 1px solid black;
     -webkit-border-radius: 0;
     border-radius: 0;
     color: var(--negro-primario);
@@ -57,7 +57,7 @@
     transform-origin: 50% 50% 0;
     font-family: 'Roboto';
     font-size: 14px;
-    border-radius: 0.3125rem;
+    border-radius: 0.5rem;
 }
 
 .button:hover {

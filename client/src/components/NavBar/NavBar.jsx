@@ -30,42 +30,43 @@ export default function NavBar({ setCurrentPage }) {
 		}
 	}
 
+
 	return (
 		<>
-				<nav className={style.navbar}>
-					<div className={style.items}>
-						<div>
+			<nav className={style.nav}>
+				<div className={style.items}>
+					<div>
 						<img id="logo" src={Logo} alt="" className={style.logo} />
-						</div>
-						{/* <li className={style.li}>
+					</div>
+					{/* <li className={style.li}>
 							<a href="/">Landing Page</a>
 						</li> */}
-						<div className={style.div}>
-							<a href="/">Home</a>
-						</div>
-						<div className={style.div}>
-							<a href="/activity">Create activity</a>
-						</div>
-						<div className={style.div}>
-							<input
-								value={name}
-								type="text"
-								placeholder="Find a country..."
-								onChange={(e) => handleInputChange(e)}
-								className={style.input}
-							/>
-						</div>
-						<div className={style.div}>
-							<button
-								type="submit"
-								onClick={(e) => handleSubmit(e)}
-								className={style.button}
-							>
-								Search
-							</button>
-						</div>
+					<div className={style.div}>
+						<a href="/">Home</a>
 					</div>
-				</nav>
+					<div className={style.div}>
+						<a href="/activity">Create activity</a>
+					</div>
+					<div className={style.div}>
+						<input
+							value={name}
+							type="text"
+							placeholder="Find a country..."
+							onChange={(e) => handleInputChange(e)}
+							className={style.input}
+						/>
+					</div>
+					<div className={style.div}>
+						<button
+							type="submit"
+							onClick={(e) => handleSubmit(e)}
+							className={style.button}
+						>
+							Search
+						</button>
+					</div>
+				</div>
+			</nav>
 		</>
 	);
 }

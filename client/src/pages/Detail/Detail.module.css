@@ -14,7 +14,7 @@
     padding: 0.625rem 1.25rem;
     margin-left: 1.25rem;
     overflow: hidden;
-    border: 2px solid;
+    border: 1px solid;
     -webkit-border-radius: 0;
     border-radius: 0;
     font-family: 'Roboto';
@@ -29,7 +29,7 @@
     -webkit-transform-origin: 50% 50% 0;
     transform-origin: 50% 50% 0;
     transition-duration: 0.4s;
-    border-radius: 0.3125rem;
+    border-radius: 0.5rem;
 }
 
 .button:hover {
@@ -39,6 +39,8 @@
 
 .container {
     display: flex;
+    justify-content: center;
+    align-content: center;
     min-height: 100vh;
     min-width: 100vh;
     margin: 0px;
@@ -52,8 +54,8 @@
     width: 30rem;
     background-color: var(--negro-primario);
     padding: 0.625rem 1.875rem;
-    border: 2px solid var(--amarillo-primario);
-    border-radius: 1.25rem;
+    border: 1px solid var(--amarillo-primario);
+    border-radius: 1.75rem;
 }
 
 h3 {
