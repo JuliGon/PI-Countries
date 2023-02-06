@@ -1,7 +1,7 @@
 .card {
 	margin: 1rem;
 	width: 17rem;
-	height: 13.5rem;
+	height: 14rem;
 	background-color: var(--negro-secundario);
 	border-radius: 1.85rem;
 }
@@ -30,6 +30,6 @@
 
 .img {
 	width: 14.5rem;
-	height: 8.75rem;
+	height: 9.25rem;
 	padding-bottom: 0.9375rem;
 }
