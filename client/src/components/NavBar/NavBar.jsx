@@ -38,9 +38,6 @@ export default function NavBar({ setCurrentPage }) {
 					<div>
 						<img id="logo" src={Logo} alt="" className={style.logo} />
 					</div>
-					{/* <li className={style.li}>
-							<a href="/">Landing Page</a>
-						</li> */}
 					<div className={style.div}>
 						<a href="/">Home</a>
 					</div>
