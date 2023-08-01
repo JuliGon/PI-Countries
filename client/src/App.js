@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Landing from "../src/pages/Landing/Landing";
 import Home from "../src/pages/Home/Home";
 import Detail from "../src/pages/Detail/Detail";
 import Form from "../src/pages/Form/Form";
