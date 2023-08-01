@@ -1,3 +1,7 @@
+.container {
+    height: 37vh;
+}
+
 .loader {
     width: 2rem;
     height: 5.625rem;
