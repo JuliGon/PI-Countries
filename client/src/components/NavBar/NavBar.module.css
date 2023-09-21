@@ -1,16 +1,23 @@
+.container {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+	background-color: var(--negro-primario);
+	z-index: 10;
+}
+
 .nav {
 	display: flex;
-	position: fixed;
-	justify-content: space-around;
-	align-items: center;
-	height: fit-content;
-	width: 100%;
-	z-index: 100;
-	background-color: var(--negro-primario);
-	top: 0%;
-	left: 0%;
-	bottom: 5%;
-	flex-flow: row;
+	position: relative;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;	
+	max-width: 1240px;
+	margin: auto;
+	height: 100%;
+	padding: 0 1rem;
 }
 
 .nav.none {
@@ -28,16 +35,6 @@
 	position: relative;
 	display: inline-block;
 	align-self: center;
-	flex-flow: row;
-}
-
-.items {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-flow: row;
-	align-items: center;
-	height: 100%;
 }
 
 .div {
@@ -47,7 +44,6 @@
 	width: auto;
 	align-items: center;
 	justify-content: space-around;
-	flex-flow: row;
 	margin: auto;
 }
 
@@ -63,6 +59,12 @@
 .div a:hover {
 	background-color: var(--amarillo-primario);
 	color: var(--negro-primario);
+}
+
+.ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
 }
 
 .input {

@@ -30,40 +30,37 @@ export default function NavBar({ setCurrentPage }) {
 		}
 	}
 
-
 	return (
-		<>
+		<div className={style.container}>
 			<nav className={style.nav}>
-				<div className={style.items}>
-					<div>
-						<img id="logo" src={Logo} alt="" className={style.logo} />
-					</div>
-					<div className={style.div}>
-						<a href="/">Home</a>
-					</div>
-					<div className={style.div}>
-						<a href="/activity">Form</a>
-					</div>
-					<div className={style.div}>
-						<input
-							value={name}
-							type="text"
-							placeholder="Search..."
-							onChange={(e) => handleInputChange(e)}
-							className={style.input}
-						/>
-					</div>
-					<div className={style.div}>
-						<button
-							type="submit"
-							onClick={(e) => handleSubmit(e)}
-							className={style.button}
-						>
-							Search
-						</button>
-					</div>
+				<div className={style.div}>
+					<img id="logo" src={Logo} alt="" className={style.logo} />
+					<ul className={style.ul}>
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="/activity">Form</a>
+						</li>
+					</ul>
+				</div>
+				<div className={style.div}>
+					<input
+						value={name}
+						type="text"
+						placeholder="Search..."
+						onChange={(e) => handleInputChange(e)}
+						className={style.input}
+					/>
+					<button
+						type="submit"
+						onClick={(e) => handleSubmit(e)}
+						className={style.button}
+					>
+						Search
+					</button>
 				</div>
 			</nav>
-		</>
+		</div>
 	);
 }
