@@ -22,7 +22,6 @@
     position: relative;
     color: var(--negro-primario);
     text-decoration: none;
-    padding: 0.3125rem;
 }
 
 .buttonDisabled {
