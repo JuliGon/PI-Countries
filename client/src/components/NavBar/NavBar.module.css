@@ -15,9 +15,9 @@
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1240px;
-	margin: auto;
 	height: 100%;
-	padding: 0 1rem;
+	margin: auto;
+	padding: 0.25rem 1rem;
 }
 
 .nav.none {
@@ -29,9 +29,8 @@
 }
 
 .logo {
-	height: 2.75rem;
+	height: 2.5rem;
 	width: auto;
-	margin: 0.3em 1em;
 	position: relative;
 	display: inline-block;
 	align-self: center;
