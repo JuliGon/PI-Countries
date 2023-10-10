@@ -16,7 +16,7 @@ export default function NavBar({ setCurrentPage }) {
 
 	function handleInputChange(e) {
 		e.preventDefault();
-		setName(e.target.value); 
+		setName(e.target.value);
 		console.log(name);
 	}
 
@@ -34,24 +34,30 @@ export default function NavBar({ setCurrentPage }) {
 			console.log(error);
 		}
 	}
-	
+
 	return (
 		<div className={style.container}>
 			<nav className={style.nav}>
 				<div className={style.div}>
 					<a href="/" onClick={closeMenu}>
-					  <img id="logo" src={Logo} alt="" className={style.logo} />
+						<img id="logo" src={Logo} alt="" className={style.logo} />
 					</a>
 
 					<div className={style.hamburger} onClick={handleClick}>
 						{click ? <FiX /> : <FiMenu />}
 					</div>
-					<ul className={click ? `${style.menuActive} ${style.menu}` : style.menu}>
+					<ul
+						className={click ? `${style.menuActive} ${style.menu}` : style.menu}
+					>
 						<li>
-							<a href="/" onClick={closeMenu}>Home</a>
+							<a href="/" onClick={closeMenu}>
+								Home
+							</a>
 						</li>
 						<li>
-							<a href="/activity" onClick={closeMenu}>Form</a>
+							<a href="/activity" onClick={closeMenu}>
+								Form
+							</a>
 						</li>
 					</ul>
 				</div>

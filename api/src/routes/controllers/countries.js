@@ -12,33 +12,31 @@ const getCountries = async () => {
 				flag: e.flags[1],
 				region: e.region,
 				capital: e.capital ? e.capital[0] : "Not available",
-                subregion: e.subregion ? e.subregion : "Not available",
-                area: e.area,
-                population: e.population,
+				subregion: e.subregion ? e.subregion : "Not available",
+				area: e.area,
+				population: e.population,
 			};
-        });
-        return countries;
-    } catch (error) {
-        console.log(error);
-    }
+		});
+		return countries;
+	} catch (error) {
+		console.log(error);
+	}
 };
 
 const chargeAndGetCountries = async () => {
-    try {
-        const dbCountries = await Country.findAll({ include: Activity });
-        if (!dbCountries.length) {
-            const country = await getCountries();
-            return await Country.bulkCreate(country);
-        } else {
-            return dbCountries;
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-
+	try {
+		const dbCountries = await Country.findAll({ include: Activity });
+		if (!dbCountries.length) {
+			const country = await getCountries();
+			return await Country.bulkCreate(country);
+		} else {
+			return dbCountries;
+		}
+	} catch (error) {
+		console.log(error);
+	}
+};
 
 module.exports = {
-    chargeAndGetCountries
+	chargeAndGetCountries,
 };

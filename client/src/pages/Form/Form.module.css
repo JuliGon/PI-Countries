@@ -1,10 +1,10 @@
 .container {
-    margin: 0px;
-    padding: 0;
-    background: var(--negro-background);
-    display: flex;
+	margin: 0px;
+	padding: 0;
+	background: var(--negro-background);
+	display: flex;
 	flex-direction: column;
-    min-height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	justify-content: center;
 	align-content: center;
@@ -12,144 +12,144 @@
 }
 
 .back {
-    color: var(--blanco-secundario);
+	color: var(--blanco-secundario);
 	background-color: transparent;
 	font-size: 20px;
 	cursor: pointer;
 	border: none;
-    margin-top: 3.75rem;
-    margin-left: 1rem;
-    float: left;
-    display: flex;
+	margin-top: 3.75rem;
+	margin-left: 1rem;
+	float: left;
+	display: flex;
 }
 
 .back:hover {
-	color: var(--amarillo-primario)
+	color: var(--amarillo-primario);
 }
 
 .form {
-    margin: 0 auto;
-    width: 30rem;
-    background-color: var(--negro-primario);
-    padding: 0.625rem 1.875rem;
-    border: 1px solid var(--amarillo-primario);
-    border-radius: 1.75rem;
+	margin: 0 auto;
+	width: 30rem;
+	background-color: var(--negro-primario);
+	padding: 0.625rem 1.875rem;
+	border: 1px solid var(--amarillo-primario);
+	border-radius: 1.75rem;
 }
 
 h3 {
-    font-family: 'Roboto';
-    font-size: 16px;
-    color: var(--blanco-secundario);
-    text-align: center;
+	font-family: "Roboto";
+	font-size: 16px;
+	color: var(--blanco-secundario);
+	text-align: center;
 }
 
 .input {
-    /* padding: 0.3125rem; */
-    width: 80%;
-    height: 1.8rem;
-    padding-left: 0.625rem;
-    border: 1px solid var(--negro-primario);
-    background-color: var(--blanco-secundario);
-    font-family: 'Roboto';
-    font-size: 14px;
-    border-radius: 0.5rem;
+	/* padding: 0.3125rem; */
+	width: 80%;
+	height: 1.8rem;
+	padding-left: 0.625rem;
+	border: 1px solid var(--negro-primario);
+	background-color: var(--blanco-secundario);
+	font-family: "Roboto";
+	font-size: 14px;
+	border-radius: 0.5rem;
 }
 
 .label {
-    margin: 0.7rem;
-    font-family: 'Roboto';
-    color: var(--blanco-secundario);
-    font-size: 14px;
-    display: block;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+	margin: 0.7rem;
+	font-family: "Roboto";
+	color: var(--blanco-secundario);
+	font-size: 14px;
+	display: block;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 }
 
 .ul {
-    list-style: none;
+	list-style: none;
 }
 
 .li {
-    text-align: center;
-    font-size: 12px;
+	text-align: center;
+	font-size: 12px;
 }
 
 .btn {
-    margin-top: 1.25rem;
+	margin-top: 1.25rem;
 }
 
 .btnForm {
-    width: 80%;
-    height: 35px;
-    margin: 5%;
-    background-color: var(--negro-background);
-    border: 1px solid var(--amarillo-primario);
-    border-radius: 0.5rem;
-    color: var(--blanco-secundario);
-    font-family: 'Roboto';
-    font-size: 14px;
-    font: bold;
+	width: 80%;
+	height: 35px;
+	margin: 5%;
+	background-color: var(--negro-background);
+	border: 1px solid var(--amarillo-primario);
+	border-radius: 0.5rem;
+	color: var(--blanco-secundario);
+	font-family: "Roboto";
+	font-size: 14px;
+	font: bold;
 }
 
-.btnDisabled{
-display: none;
+.btnDisabled {
+	display: none;
 }
 
 .select {
-    width: 80%;
-    height: 1.875rem;
-    /* margin: 0.625rem; */
-    padding-left: 10px;
-    border: 1px solid var(--negro-primario);
-    background-color: var(--blanco-secundario);
-    font-family: 'Roboto';
-    font-size: 14px;
-    border-radius: 0.5rem;
+	width: 80%;
+	height: 1.875rem;
+	/* margin: 0.625rem; */
+	padding-left: 10px;
+	border: 1px solid var(--negro-primario);
+	background-color: var(--blanco-secundario);
+	font-family: "Roboto";
+	font-size: 14px;
+	border-radius: 0.5rem;
 }
 
 .errors {
-    font-family: 'Roboto';
-    font-size: 12px;
-    color: var(--amarillo-primario);
-    text-align: center;
-    padding: 0.3rem;
+	font-family: "Roboto";
+	font-size: 12px;
+	color: var(--amarillo-primario);
+	text-align: center;
+	padding: 0.3rem;
 }
 
 .p {
-    font-family: 'Roboto';
-    font-size: 12px;
-    color: #a09c9c;
-    text-align: center;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding: 0.3rem;
+	font-family: "Roboto";
+	font-size: 12px;
+	color: #a09c9c;
+	text-align: center;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding: 0.3rem;
 }
 
 .delete {
-    text-align: center;
-    background-color: transparent;
-    color: var(--blanco-secundario);
-    font-size: 12px;
-    border: 1px solid var(--blanco-secundario);
-    border-radius: 25%;
-    padding: 0.2rem;
-    cursor: pointer;
+	text-align: center;
+	background-color: transparent;
+	color: var(--blanco-secundario);
+	font-size: 12px;
+	border: 1px solid var(--blanco-secundario);
+	border-radius: 25%;
+	padding: 0.2rem;
+	cursor: pointer;
 }
 
 .delete:hover {
-    color: var(--amarillo-primario);
-    border: 1px solid var(--amarillo-primario);
+	color: var(--amarillo-primario);
+	border: 1px solid var(--amarillo-primario);
 }
 
 @media screen and (max-width: 576px) {
-    .form {
-        min-width: 20rem;
-        width: 80%;
-        height: auto;
-    }
+	.form {
+		min-width: 20rem;
+		width: 80%;
+		height: auto;
+	}
 
-    .back {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+	.back {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 }

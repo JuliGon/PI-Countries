@@ -115,7 +115,7 @@
 }
 
 .search:hover {
-	color: var(--amarillo-primario)
+	color: var(--amarillo-primario);
 }
 
 @media screen and (max-width: 576px) {
@@ -161,6 +161,6 @@
 	}
 
 	.input {
-		width:10rem;
+		width: 10rem;
 	}
 }

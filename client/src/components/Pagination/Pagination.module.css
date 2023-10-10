@@ -1,29 +1,29 @@
 .pagination {
-    display: flex;
-    font-family: 'Roboto';
-    font-size: 12px;
-    align-content: center;
-    justify-content: center;
-    background-position: center;
-    flex-direction: row;
+	display: flex;
+	font-family: "Roboto";
+	font-size: 12px;
+	align-content: center;
+	justify-content: center;
+	background-position: center;
+	flex-direction: row;
 }
 
 .li {
-    display: inline-block;
-    padding: 0.3125rem;
-    cursor: pointer;
-    position: relative;
-    color: var(--negro-primario);
+	display: inline-block;
+	padding: 0.3125rem;
+	cursor: pointer;
+	position: relative;
+	color: var(--negro-primario);
 }
 
 .a {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    color: var(--negro-primario);
-    text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	color: var(--negro-primario);
+	text-decoration: none;
 }
 
 .buttonDisabled {
-    display: none;
+	display: none;
 }

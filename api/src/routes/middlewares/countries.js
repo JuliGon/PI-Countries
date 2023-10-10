@@ -7,14 +7,14 @@ router.get("", async (req, res) => {
 	try {
 		const countries = await chargeAndGetCountries();
 		if (name) {
-		 	const country = await countries.filter((e) =>
-		 		e.name.toLowerCase().includes(name.toLowerCase())
-		 	);
-		 	country.length
-		 		? res.json(country)
-		 		: res.status(404).send("Country not found");
+			const country = await countries.filter((e) =>
+				e.name.toLowerCase().includes(name.toLowerCase())
+			);
+			country.length
+				? res.json(country)
+				: res.status(404).send("Country not found");
 		} else {
-		 	res.json(countries);
+			res.json(countries);
 		}
 	} catch (error) {
 		res.status(404).send("Something went wrong!");
@@ -22,11 +22,13 @@ router.get("", async (req, res) => {
 });
 
 router.get("/:id", async (req, res) => {
-    const { id } = req.params;
+	const { id } = req.params;
 	try {
 		const countries = await chargeAndGetCountries();
 		if (id) {
-			const countryId = await countries.filter((e) => e.id.toUpperCase().includes(id.toUpperCase())); 
+			const countryId = await countries.filter((e) =>
+				e.id.toUpperCase().includes(id.toUpperCase())
+			);
 			countryId.length
 				? res.json(countryId)
 				: res.status(404).send("Country not found");
