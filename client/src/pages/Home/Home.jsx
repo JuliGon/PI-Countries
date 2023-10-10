@@ -11,7 +11,7 @@ export default function Home() {
   const allCountries = useSelector((state) => state.countries);
   const [order, setOrder] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [countriesPerPage, setCountriesPerPage] = useState(8);
+  const [countriesPerPage, setCountriesPerPage] = useState(12);
   const indexOfLastCountry = currentPage * countriesPerPage;
   const indexOfFirstCountry = indexOfLastCountry - countriesPerPage;
   const currentCountries = allCountries.slice(
@@ -25,9 +25,7 @@ export default function Home() {
 
   return (
     <>
-
       <div className={style.container}>
-        <div className={style.filtersAndPagination}>
           <Filters setCurrentPage={setCurrentPage} setOrder={setOrder} />
           <Pagination
             key={1}
@@ -37,7 +35,6 @@ export default function Home() {
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
           />
-        </div>
         <Container
           setCurrentPage={setCurrentPage}
           currentCountries={currentCountries}
