@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -6,16 +7,21 @@ import {
 	orderByPopulation,
 	filterByActivity,
 	filterByRegion,
+	getCountries,
 } from "../../redux/actions";
 import style from "./Filters.module.css";
 
-export default function Filters({ setCurrentPage, setOrder }) {
+export default function Filters({
+	setCurrentPage,
+	setOrder,
+	currentCountries,
+}) {
 	const dispatch = useDispatch();
 	const allActivities = useSelector((state) => state.activities);
 
 	function handleFilterByActivity(e) {
 		e.preventDefault();
-		dispatch(filterByActivity(e.target.value));//recibe los datos que se seleccionan -> e.target.value
+		dispatch(filterByActivity(e.target.value)); //recibe los datos que se seleccionan -> e.target.value
 		setCurrentPage(1);
 	}
 
@@ -37,6 +43,11 @@ export default function Filters({ setCurrentPage, setOrder }) {
 		dispatch(orderByPopulation(e.target.value));
 		setCurrentPage(1);
 		setOrder(`In order ${e.target.value}`);
+	}
+
+	function handleClick(e) {
+		e.preventDefault();
+		dispatch(getCountries());
 	}
 
 	return (
@@ -117,6 +128,14 @@ export default function Filters({ setCurrentPage, setOrder }) {
 						</option>
 					))}
 				</select>
+				<button
+					onClick={(e) => {
+						handleClick(e);
+					}}
+					className={style.button}
+				>
+					Reset
+				</button>
 			</div>
 		</>
 	);

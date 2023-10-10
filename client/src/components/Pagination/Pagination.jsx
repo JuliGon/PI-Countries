@@ -7,11 +7,11 @@ export default function Pagination({
 	pagination,
 	currentPage,
 	setCurrentPage,
-	countriesOnFirstPage
+	countriesOnFirstPage,
 }) {
 	const pageNumbers = [];
 	const totalPages = Math.ceil(allCountries / countriesPerPage);
-	
+
 	//sumo uno al total de páginas por el país que corto de la primera
 	//divide todas los paises por la cantidad de paises por pagina
 	//y los pushea al array pageNumbers
@@ -43,7 +43,7 @@ export default function Pagination({
 							onClick={previousPage}
 							className={currentPage > 1 ? style.a : style.buttonDisabled}
 						>
-							Previous
+							◄
 						</a>
 					</li>
 					{/* {pageNumbers?.map((number) => (
@@ -59,16 +59,18 @@ export default function Pagination({
 					))} */}
 					<li className={style.li}>
 						<a href="#!" className={style.a}>
-							Page: {currentPage} / {totalPages}
+							{currentPage} / {totalPages}
 						</a>
 					</li>
 					<li key="next" className={style.li}>
 						<a
 							href="#!"
 							onClick={nextPage}
-							className={currentPage !== totalPages ? style.a : style.buttonDisabled}
+							className={
+								currentPage !== totalPages ? style.a : style.buttonDisabled
+							}
 						>
-							Next
+							►
 						</a>
 					</li>
 				</ul>
