@@ -100,6 +100,7 @@
 	border: 1px solid black;
 	font-family: "Roboto";
 	font-size: 14px;
+	color: var(--blanco-secundario);
 	border-color: var(--blanco-secundario);
 	background: var(--negro-primario);
 	border-radius: 0.5rem;
