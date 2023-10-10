@@ -1,10 +1,10 @@
 /* variables paleta de colores */
 :root {
   --amarillo-primario: #ffc31a;
-  --negro-primario: black;
-  --negro-background: #202020;
+  --negro-primario: #0e0e0e;
+  --negro-background: #1d1d1d;
   --negro-secundario: rgba(0, 0, 0, 0.75);
-  --blanco-secundario: #ffffff;
+  --blanco-secundario: #ffffffee;
 }
 
 * {
