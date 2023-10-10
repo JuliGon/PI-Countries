@@ -29,9 +29,9 @@
 }
 
 .logo {
-	width: 2.15rem;
+	height: 2.5rem;
+	width: auto;
 	margin: 0.3em 1em;
-	height: auto;
 	position: relative;
 	display: inline-block;
 	align-self: center;

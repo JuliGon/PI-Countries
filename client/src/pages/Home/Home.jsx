@@ -15,7 +15,7 @@ export default function Home() {
 
 	//paginado
 	const [currentPage, setCurrentPage] = useState(1); //creo un estado local, le paso la pagina actual y la seteo para que arranque en 1
-	const [countriesPerPage, setCountriesPerPage] = useState(12); //un segundo estado local, le paso la cantidad de paises por pagina (12)
+	const [countriesPerPage, setCountriesPerPage] = useState(8); //un segundo estado local, le paso la cantidad de paises por pagina (12)
 	const indexOfLastCountry = currentPage * countriesPerPage; // 12
 	const indexOfFirstCountry = indexOfLastCountry - countriesPerPage; // 0
 	const currentCountries = allCountries.slice(

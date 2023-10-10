@@ -1,8 +1,44 @@
 .container {
-    height: 37vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-
 .loader {
+    width: 2rem;
+    height: 2rem;
+    clear: both;
+    border-radius: 50%;
+    border-left: 0 #000 solid;
+    border-right: 0 #000 solid;
+    animation: spSphere 1s infinite linear;
+    align-self: center;
+  }
+  
+  @keyframes spSphere {
+    0% {
+      border-left: 0 #000 solid;
+      border-right: 0 #000 solid;
+    }
+  
+    33% {
+      border-left: 2rem #000 solid;
+      border-right: 0 #000 solid;
+    }
+  
+    34% {
+      border-left: 0 #000 solid;
+      border-right: 2rem #000 solid;
+    }
+  
+    66% {
+      border-left: 0 #000 solid;
+      border-right: 0 #000 solid;
+    }
+  }
+  
+
+/* .loader {
     width: 2rem;
     height: 5.625rem;
     display: block;
@@ -81,4 +117,4 @@
         background-position: -36px -36px;
         background-size: 80px 80px;
     }
-}
+} */

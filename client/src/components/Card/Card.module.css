@@ -1,9 +1,9 @@
 .card {
 	margin: 1rem;
 	width: 17rem;
-	height: 14rem;
+	height: 13rem;
 	background-color: var(--negro-secundario);
-	border-radius: 1.85rem;
+	border-radius: 1.75rem;
 	/* background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(5px); */
 }
@@ -11,14 +11,14 @@
 .title {
 	margin: 0 auto;
 	width: 13rem;
-	height: 1.5rem;
+	height: 1rem;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	color: var(--blanco-secundario);
 	font-size: 14px;
   margin-bottom: 5px;
-  padding: 1.25em 0.5em;
+  padding: 1em 0.5em;
 }
 
 .subtitle {
@@ -31,7 +31,7 @@
 }
 
 .img {
-	width: 14.5rem;
-	height: 9.25rem;
+	width: 14rem;
+	height: 9rem;
 	padding-bottom: 0.9375rem;
 }
