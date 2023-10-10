@@ -4,10 +4,15 @@ import { useDispatch } from "react-redux";
 import { getCountriesByName } from "../../redux/actions";
 import style from "./NavBar.module.css";
 import Logo from "./Isologo.png";
+import { FiMenu, FiX, FiSearch } from "react-icons/fi";
 
 export default function NavBar({ setCurrentPage }) {
 	const dispatch = useDispatch();
 	const [name, setName] = useState("");
+
+	const [click, setClick] = useState(false);
+	const handleClick = () => setClick(!click);
+	const closeMenu = () => setClick(false);
 
 	function handleInputChange(e) {
 		e.preventDefault();
@@ -29,18 +34,24 @@ export default function NavBar({ setCurrentPage }) {
 			console.log(error);
 		}
 	}
-
+	
 	return (
 		<div className={style.container}>
 			<nav className={style.nav}>
 				<div className={style.div}>
-					<img id="logo" src={Logo} alt="" className={style.logo} />
-					<ul className={style.ul}>
+					<a href="/" onClick={closeMenu}>
+					  <img id="logo" src={Logo} alt="" className={style.logo} />
+					</a>
+
+					<div className={style.hamburger} onClick={handleClick}>
+						{click ? <FiX /> : <FiMenu />}
+					</div>
+					<ul className={click ? `${style.menuActive} ${style.menu}` : style.menu}>
 						<li>
-							<a href="/">Home</a>
+							<a href="/" onClick={closeMenu}>Home</a>
 						</li>
 						<li>
-							<a href="/activity">Form</a>
+							<a href="/activity" onClick={closeMenu}>Form</a>
 						</li>
 					</ul>
 				</div>
@@ -55,9 +66,9 @@ export default function NavBar({ setCurrentPage }) {
 					<button
 						type="submit"
 						onClick={(e) => handleSubmit(e)}
-						className={style.button}
+						className={style.search}
 					>
-						Search
+						<FiSearch />
 					</button>
 				</div>
 			</nav>

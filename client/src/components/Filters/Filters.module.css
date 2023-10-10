@@ -75,3 +75,21 @@
 	background-color: var(--negro-primario);
 	color: var(--amarillo-primario);
 }
+
+@media screen and (max-width: 576px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.filters {
+		width: 100%;
+	}
+
+	.button {
+		width: 100%;
+	}
+
+}

@@ -2,11 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {
-	getCountries,
-	postActivity,
-} from "../../redux/actions";
+import { getCountries, postActivity } from "../../redux/actions";
 import style from "./Form.module.css";
+import { FiArrowLeft } from "react-icons/fi";
 
 export default function Form() {
 	const dispatch = useDispatch();
@@ -35,7 +33,7 @@ export default function Form() {
 	//validations
 	let validateName = /^[a-zA-Z\s]+$/;
 	let validateInteger = /^[\d]$/;
-	
+
 	function validate(input) {
 		let errors = {};
 
@@ -58,7 +56,7 @@ export default function Form() {
 
 	useEffect(() => {
 		setErrors(validate(input));
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [input]);
 
 	function handleChange(e) {
@@ -126,8 +124,8 @@ export default function Form() {
 	return (
 		<>
 			<div className={style.container}>
-				<Link to="/">
-					<button className={style.button}>Back</button>
+				<Link to="/" className={style.back}>
+					<FiArrowLeft />
 				</Link>
 				<form onSubmit={(e) => handleSubmit(e)} className={style.form}>
 					<div>
