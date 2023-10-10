@@ -14,8 +14,8 @@
 	border: 1px solid black;
 	font-family: "Roboto";
 	font-size: 14px;
-	color: var(--negro-primario);
-	background-color: var(--amarillo-primario);
+	color: var(--negro-background);
+	background-color: transparent;
 	border-radius: 0.5rem;
 	align-items: center;
 	cursor: pointer;
@@ -24,18 +24,18 @@
 .label {
 	font-family: "Roboto";
 	font-size: 14px;
-	color: var(--negro-primario);
+	color: var(--negro-background);
 	align-self: center;
 }
 
 .option {
 	background-color: var(--blanco-secundario);
-	color: var(--negro-primario);
+	color: var(--negro-background);
 }
 
 .option:default {
 	background-color: var(--blanco-secundario);
-	color: var(--negro-primario);
+	color: var(--negro-background);
 }
 
 .button {
@@ -51,13 +51,13 @@
 	cursor: pointer;
 	opacity: 1;
 	overflow: hidden;
-	border: 1px solid black;
+	border: 1px solid var(--negro-background);;
 	-webkit-border-radius: 0;
 	color: var(--negro-primario);
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	word-spacing: 2px;
-	background: var(--amarillo-primario);
+	background: transparent;
 	-webkit-transition: none;
 	-moz-transition: none;
 	-o-transition: none;
@@ -72,7 +72,7 @@
 }
 
 .button:hover {
-	background-color: var(--negro-primario);
+	background-color: var(--negro-background);
 	color: var(--amarillo-primario);
 }
 
