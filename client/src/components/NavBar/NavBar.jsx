@@ -11,7 +11,7 @@ export default function NavBar({ setCurrentPage }) {
 
 	function handleInputChange(e) {
 		e.preventDefault();
-		setName(e.target.value); //valor que tiene el input
+		setName(e.target.value); 
 		console.log(name);
 	}
 

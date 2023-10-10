@@ -3,10 +3,8 @@ import React from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import Container from "../../components/Container/Container";
-import NavBar from "../../components/NavBar/NavBar";
 import Filters from "../../components/Filters/Filters";
 import Pagination from "../../components/Pagination/Pagination";
-import Footer from "../../components/Footer/Footer";
 import style from "./Home.module.css";
 
 export default function Home() {
@@ -27,9 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <div>
-        <NavBar setCurrentPage={setCurrentPage} />
-      </div>
+
       <div className={style.container}>
         <div className={style.filtersAndPagination}>
           <Filters setCurrentPage={setCurrentPage} setOrder={setOrder} />
@@ -46,7 +42,6 @@ export default function Home() {
           setCurrentPage={setCurrentPage}
           currentCountries={currentCountries}
         />
-        <Footer setCurrentPage={setCurrentPage} />
       </div>
     </>
   );

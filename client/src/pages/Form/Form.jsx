@@ -11,6 +11,7 @@ import style from "./Form.module.css";
 export default function Form() {
 	const dispatch = useDispatch();
 	const history = useHistory();
+	// eslint-disable-next-line no-unused-vars
 	const activities = useSelector((state) => state.activities);
 	const countries = useSelector((state) => state.countries);
 	const [errors, setErrors] = useState({});
@@ -57,6 +58,7 @@ export default function Form() {
 
 	useEffect(() => {
 		setErrors(validate(input));
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [input]);
 
 	function handleChange(e) {
@@ -125,7 +127,7 @@ export default function Form() {
 		<>
 			<div className={style.container}>
 				<Link to="/">
-					<button className={style.button}>Home</button>
+					<button className={style.button}>Back</button>
 				</Link>
 				<form onSubmit={(e) => handleSubmit(e)} className={style.form}>
 					<div>

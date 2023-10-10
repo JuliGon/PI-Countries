@@ -10,7 +10,7 @@
     cursor: pointer;
     opacity: 1;
     margin-left: 1.25rem;
-    margin-top: 1.25rem;
+    margin-top: 3.75rem;
     padding: 0.625rem 1.25rem;
     overflow: hidden;
     border: 1px solid;
@@ -48,7 +48,6 @@
 
 .detail {
     margin: 0 auto;
-    margin-top: 2rem;
     width: 30rem;
     background-color: var(--negro-primario);
     padding: 0.625rem 1.875rem;

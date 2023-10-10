@@ -22,7 +22,7 @@ export default function Detail() {
 		<>
 			<div className={style.container}>
 				<Link to="/">
-					<button className={style.button}>Home</button>
+					<button className={style.button}>Back</button>
 				</Link>
 				{country.length > 0 ? 
 					<div className={style.detail}>

@@ -9,7 +9,7 @@
     position: static;
     cursor: pointer;
     opacity: 1;
-    margin-top: 1.25rem;
+    margin-top: 3.75rem;
     padding: 0.625rem 1.25rem;
     margin-left: 1.25rem;
     overflow: hidden;
@@ -51,7 +51,6 @@
 
 .form {
     margin: 0 auto;
-    margin-top: 2rem;
     width: 30rem;
     background-color: var(--negro-primario);
     padding-top: 0.625rem;
