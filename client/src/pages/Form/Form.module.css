@@ -127,10 +127,18 @@ display: none;
 
 .delete {
     text-align: center;
-    background-color: var(--blanco-secundario);
-    border-radius: 0.5rem;
-    font-family: 'Roboto';
-    font-size: 14px;
+    background-color: transparent;
+    color: var(--blanco-secundario);
+    font-size: 12px;
+    border: 1px solid var(--blanco-secundario);
+    border-radius: 25%;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: var(--amarillo-primario);
+    border: 1px solid var(--amarillo-primario);
 }
 
 @media screen and (max-width: 576px) {

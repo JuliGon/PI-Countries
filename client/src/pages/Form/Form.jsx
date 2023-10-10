@@ -115,7 +115,7 @@ export default function Form() {
 				season: "",
 				countries: [],
 			});
-			history.push("/home");
+			history.push("/");
 		} else {
 			alert("Something went wrong!");
 		}
