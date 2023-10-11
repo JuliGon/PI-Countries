@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Pagination.module.css";
+import { BiSolidChevronsLeft, BiSolidChevronsRight } from "react-icons/bi";
 
 export default function Pagination({
 	countriesPerPage,
@@ -43,20 +44,9 @@ export default function Pagination({
 							onClick={previousPage}
 							className={currentPage > 1 ? style.a : style.buttonDisabled}
 						>
-							◄
+							<BiSolidChevronsLeft />
 						</a>
 					</li>
-					{/* {pageNumbers?.map((number) => (
-						<li key={number} className={style.li}>
-							<a
-								href="#!"
-								onClick={() => pagination(number)}
-								className={style.a}
-							>
-								{number}
-							</a>
-						</li>
-					))} */}
 					<li className={style.li}>
 						<a href="#!" className={style.a}>
 							{currentPage} / {totalPages}
@@ -70,7 +60,7 @@ export default function Pagination({
 								currentPage !== totalPages ? style.a : style.buttonDisabled
 							}
 						>
-							►
+							<BiSolidChevronsRight />
 						</a>
 					</li>
 				</ul>
