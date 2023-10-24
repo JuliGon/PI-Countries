@@ -3,7 +3,7 @@ const router = Router();
 const { Country, Activity } = require("../../db");
 const { Op } = require("sequelize");
 
-router.post("", async (req, res) => {
+router.post("", async (req, res, next) => {
 	const { name, difficulty, duration, season, countries } = req.body;
 
 	try {
@@ -24,7 +24,7 @@ router.post("", async (req, res) => {
 			return res.status(404).send("Activity already exist");
 		}
 	} catch (error) {
-		res.status(404).send("Something went wrong!");
+		next(error);
 	}
 });
 

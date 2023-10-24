@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 const { chargeAndGetCountries } = require("../controllers/countries");
 
-router.get("", async (req, res) => {
+router.get("", async (req, res, next) => {
 	const { name } = req.query;
 	try {
 		const countries = await chargeAndGetCountries();
@@ -17,11 +17,11 @@ router.get("", async (req, res) => {
 			res.json(countries);
 		}
 	} catch (error) {
-		res.status(404).send("Something went wrong!");
+		next(error);
 	}
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", async (req, res, next) => {
 	const { id } = req.params;
 	try {
 		const countries = await chargeAndGetCountries();
@@ -34,7 +34,7 @@ router.get("/:id", async (req, res) => {
 				: res.status(404).send("Country not found");
 		}
 	} catch (error) {
-		console.log(error);
+		next(error);
 	}
 });
 

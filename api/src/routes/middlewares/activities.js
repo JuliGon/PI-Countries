@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 const { Country, Activity } = require("../../db");
 
-router.get("", async (req, res) => {
+router.get("", async (req, res, next) => {
 	const { name } = req.query;
 	try {
 		const activities = await Activity.findAll();
@@ -16,12 +16,12 @@ router.get("", async (req, res) => {
 		} else {
 			res.json(activities);
 		};
-	} catch (errors) {
-		res.status(404).send("Something went wrong");
+	} catch (error) {
+		next(error);
 	}
 });
 
-router.delete("", async (req, res) => {
+router.delete("", async (req, res, next) => {
 	const { id } = req.query;
 	const activity = await Activity.findByPk(id);
 	try {
@@ -30,11 +30,11 @@ router.delete("", async (req, res) => {
 		});
 		res.send("done");
 	} catch (error) {
-		res.status(404).send(error);
+		next(error);
 	}
 });
 
-router.put("", async (req, res) => {
+router.put("", async (req, res, next) => {
 	const { name, difficulty, duration, season, countries, id } = req.body;
 
 	try {
@@ -61,7 +61,7 @@ router.put("", async (req, res) => {
 
 		res.send(updatedActivity);
 	} catch (error) {
-		res.status(404).send(error);
+		next(error);
 	}
 });
 
